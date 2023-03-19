@@ -19,7 +19,7 @@ jobs:
         with:
           entrypoint: "/bin/echo"
           args: "Hello World"
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Run a script
         uses: docker://node:12.14.1-alpine3.10
         with:
