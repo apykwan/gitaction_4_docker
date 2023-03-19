@@ -1,11 +1,11 @@
 name: Container
-on: push
+on: workflow_dispatch
 
 jobs:
   node-docker:
-    runs-on: ubuntu-latest;
+    runs-on: ubuntu-latest
     container:
-      image: 19-alpine3.16
+      image: node:alpine
     steps:
       - name: Log node version
         run: |
